@@ -34,3 +34,15 @@
 .available__link {
   color: #006be5;
 }
+
+@media (min-width: $tablet-width) {
+  .available {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .available__text {
+    font-size: 13px;
+    line-height: 30px;
+  }
+}

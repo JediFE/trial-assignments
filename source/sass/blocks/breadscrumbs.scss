@@ -4,7 +4,6 @@
 
 .breadscrumbs__list {
   @include reset-list;
-
   display: flex;
   justify-content: space-between;
 }
@@ -44,4 +43,21 @@
   font-size: 13px;
   color: #a2a3a3;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .breadscrumbs__list {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .breadscrumbs__item {
+    display: flex;
+    padding-right: 25px;
+    margin-right: 12px;
+  }
+
+  .breadscrumbs__link {
+    line-height: 16px;
+    letter-spacing: 0.1px;
+  }
 }

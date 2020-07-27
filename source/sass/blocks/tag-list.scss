@@ -12,3 +12,9 @@
 .tag-list__link {
   color: #006be5;
 }
+
+@media (min-width: $tablet-width) {
+  .tag-list__link {
+    font-size: 13px;
+  }
+}

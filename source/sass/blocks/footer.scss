@@ -1,3 +1,14 @@
 .footer {
   display: none;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    width: 43%;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 0;
+    padding-bottom: 45px;
+  }
+}

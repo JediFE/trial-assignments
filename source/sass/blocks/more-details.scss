@@ -31,3 +31,9 @@
     background-image: url('../img/icons/arrow down.png');
   }
 }
+
+@media (min-width: $tablet-width) {
+  .more-details {
+    display: none;
+  }
+}
