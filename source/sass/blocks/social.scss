@@ -1,3 +1,7 @@
+.social {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .social__to-share {
     margin: 0;
@@ -12,10 +16,15 @@
   .social__list {
     @include reset-list;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .social__item {
     display: flex;
+
+    &:last-child .social__link {
+      margin-right: 15px;
+    }
   }
 
   .social__link {
@@ -77,5 +86,14 @@
       height: 10px;
       transform: rotate(45deg);
     }
+  }
+}
+
+@media (min-width: $tablet-width-1000) {
+  .social__to-share {
+    display: block;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 20px;
   }
 }

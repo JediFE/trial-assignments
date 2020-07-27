@@ -79,14 +79,34 @@
   }
 
   .controls__link {
+    font-size: 13px;
     margin: 0;
     padding: 8px 0;
   }
 
   .controls__button {
+    font-size: 13px;
     padding: 8px 0;
     &--share {
       display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width-1000) {
+  .controls {
+    margin-bottom: 40px;
+  }
+
+  .controls__list {
+    justify-content: flex-start;
+  }
+
+  .controls__item {
+    width: 39.7%;
+
+    &--shop {
+      margin-right: 6%;
     }
   }
 }

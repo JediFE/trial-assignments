@@ -39,10 +39,18 @@
   .available {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 50px;
   }
 
   .available__text {
     font-size: 13px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width-1000) {
+  .available {
+    width: 82%;
+    max-width: 380px;
   }
 }

@@ -18,3 +18,9 @@
     font-size: 13px;
   }
 }
+
+@media (min-width: $tablet-width-1000) {
+  .tag-list {
+    margin-bottom: 40px;
+  }
+}
