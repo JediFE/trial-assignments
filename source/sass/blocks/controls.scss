@@ -17,7 +17,7 @@
   }
 
   &--share {
-    width: 6.9%;
+    width: 20px;
   }
 }
 
@@ -110,3 +110,17 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .controls__item {
+    width: 48%;
+
+    &--shop {
+      margin-right: auto;
+    }
+  }
+}
+
+
+
+

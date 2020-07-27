@@ -24,6 +24,10 @@
   display: none;
 }
 
+.product__scroll {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .product {
     display: flex;
@@ -61,6 +65,7 @@
   }
 
   .product__scroll {
+    display: flex;
     width: 40px;
     height: 30px;
     border: 1px solid #ebebeb;
@@ -149,7 +154,19 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .product__visual {
+    width: 47%;
+  }
 
+  .product__content {
+    width: 43.5%;
+  }
+
+  .product__items {
+    margin-right: 110px;
+  }
+}
 
 
 

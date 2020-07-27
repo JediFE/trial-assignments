@@ -54,3 +54,9 @@
     max-width: 380px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .available {
+    width: 68%;
+  }
+}
