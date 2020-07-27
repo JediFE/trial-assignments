@@ -1,0 +1,36 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.price__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+
+  &--replace {
+    padding-right: 80px;
+    color: #bfbebe;
+    position: relative;
+
+    &::after {
+      content: '2 499 ₽';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #9a9b9b;
+      font-weight: 600;
+    }
+  }
+
+  &--promo {
+    font-size: 15px;
+  }
+}
+
+.price__text-new {
+  font-size: 18px;
+  line-height: 30px;
+}

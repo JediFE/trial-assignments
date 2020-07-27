@@ -1,0 +1,14 @@
+.tag-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.tag-list__item {
+  margin-right: 30px;
+}
+
+.tag-list__link {
+  color: #006be5;
+}
