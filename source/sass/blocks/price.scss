@@ -1,0 +1,60 @@
+.price {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.price__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+
+  &--promo {
+    font-size: 15px;
+  }
+}
+
+.price__text-replace {
+  padding-right: 80px;
+  color: #bfbebe;
+  position: relative;
+
+  &::after {
+    content: '2 499 ₽';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9a9b9b;
+    font-weight: 600;
+  }
+}
+
+.price__text-new {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+@media (min-width: $tablet-width-1000) {
+  .price {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 82%;
+    max-width: 380px;
+  }
+
+  .price__text:first-child {
+    width: 41%;
+  }
+
+  .price__text:last-child {
+    width: 55%;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    width: 68%;
+  }
+}

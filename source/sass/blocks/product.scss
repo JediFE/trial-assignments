@@ -1,0 +1,178 @@
+.product {
+  padding-bottom: 50px;
+}
+
+.product__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.product__list {
+  display: none;
+}
+
+.product__text {
+  margin: 0;
+  line-height: 18px;
+}
+
+.product__about {
+  margin-bottom: 20px;
+}
+
+.product__title {
+  display: none;
+}
+
+.product__scroll {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+
+  .product__visual {
+    display: flex;
+    justify-content: flex-start;
+    width: 53.5%;
+  }
+
+  .product__image {
+    margin: 0;
+    width: 290px;
+    height: 420px;
+  }
+
+  .product__items {
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product__list {
+    display: flex;
+    flex-direction: column;
+    @include reset-list;
+  }
+
+  .product__item {
+    margin-bottom: 20px;
+  }
+
+  .product__scroll {
+    display: flex;
+    width: 40px;
+    height: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    background-color: transparent;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 14px;
+      width: 11px;
+      height: 7px;
+      background-image: url('../img/icons/check.png');
+    }
+  }
+
+  .product__content {
+    width: 41%;
+  }
+
+  .product__title {
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .product__group-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__about {
+    order: 0;
+  }
+
+  .product__text {
+    font-size: 13px;
+    padding-right: 7px;
+  }
+}
+
+@media (min-width: $tablet-width-1000) {
+  .product {
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+  .product__visual {
+    width: 49.1%;
+  }
+
+  .product__image {
+    width: 340px;
+    height: 492px;
+  }
+
+  .product__items {
+    margin-right: 30px;
+  }
+
+  .product__item {
+    margin-bottom: 25px;
+  }
+
+  .product__image-small {
+    width: 90px;
+    height: 130px;
+  }
+
+  .product__content {
+    width: 44.3%;
+    margin-top: 35px;
+  }
+
+  .product__about {
+    margin-bottom: 30px;
+  }
+
+  .product__title {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__visual {
+    width: 47%;
+  }
+
+  .product__content {
+    width: 43.5%;
+  }
+
+  .product__items {
+    margin-right: 110px;
+  }
+}
+
+
+
+
+
+
+
+
+

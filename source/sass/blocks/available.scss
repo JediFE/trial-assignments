@@ -1,0 +1,62 @@
+.available {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 20px;
+  background-color: #f4f4f4;
+}
+
+.available__text {
+  margin: 0;
+  padding-left: 45px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+  }
+
+  &--shop::before {
+    background-image: url('../img/icons/tick.png');
+    width: 14px;
+    height: 10px;
+  }
+
+  &--delivery::before {
+    background-image: url('../img/icons/truck.png');
+    width: 17px;
+    height: 13px;
+  }
+}
+
+.available__link {
+  color: #006be5;
+}
+
+@media (min-width: $tablet-width) {
+  .available {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .available__text {
+    font-size: 13px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $tablet-width-1000) {
+  .available {
+    width: 82%;
+    max-width: 380px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .available {
+    width: 68%;
+  }
+}

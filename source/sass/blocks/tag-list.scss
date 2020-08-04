@@ -1,0 +1,26 @@
+.tag-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.tag-list__item {
+  margin-right: 30px;
+}
+
+.tag-list__link {
+  color: #006be5;
+}
+
+@media (min-width: $tablet-width) {
+  .tag-list__link {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: $tablet-width-1000) {
+  .tag-list {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,39 @@
+.more-details {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 20px;
+  border-top: 1px solid #eeefef;
+  border-bottom: 1px solid #eeefef;
+}
+
+.more-details__list {
+  @include reset-list;
+}
+
+.more-details__drop {
+  width: 100%;
+  padding: 0;
+  line-height: 41px;
+  background-color: transparent;
+  border: none;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 11px;
+    height: 7px;
+    background-image: url('../img/icons/arrow down.png');
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .more-details {
+    display: none;
+  }
+}

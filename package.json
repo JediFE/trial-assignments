@@ -1,20 +1,51 @@
 {
-  "name": "trial-assignments",
-  "version": "1.0.0",
-  "description": "",
-  "main": " ",
-  "scripts": {
-    "test": " "
-  },
-  "author": "",
-  "license": "",
-  "dependencies": {
-    "normalize.css": "^4.1.1"
-  },
+  "name": "trial",
+  "version": "17.0.0",
+  "private": true,
+  "description": "trial",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.0.5",
-    "gulp-postcss": "^6.1.0",
-    "autoprefixer": "^6.3.3"
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "9.5.x",
+    "browser-sync": "2.26.x",
+    "gh-pages": "^3.1.0",
+    "gulp": "4.0.x",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "posthtml-include": "^1.4.3",
+    "stylelint": "10.1.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.16"
+  },
+  "dependencies": {
+    "del": "^5.1.0"
   }
 }
