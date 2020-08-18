@@ -1,20 +1,45 @@
 {
   "name": "trial-assignments",
   "version": "1.0.0",
-  "description": "",
-  "main": " ",
-  "scripts": {
-    "test": " "
-  },
-  "author": "",
-  "license": "",
+  "private": true,
   "dependencies": {
-    "normalize.css": "^4.1.1"
+    "normalize.css": "^4.1.x"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-less": "^3.0.5",
-    "gulp-postcss": "^6.1.0",
-    "autoprefixer": "^6.3.3"
+    "autoprefixer": "9.5.x",
+    "browser-sync": "2.26.x",
+    "del": "^5.1.x",
+    "gulp": "4.0.x",
+    "gulp-csso": "^4.0.x",
+    "gulp-imagemin": "^7.1.x",
+    "gulp-less": "4.0.x",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.x",
+    "gulp-rename": "^2.0.x",
+    "gulp-sourcemaps": "2.6.x",
+    "posthtml-include": "^1.4.x",
+    "stylelint": "^13.6.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp start"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "source/*.html",
+    "source/img/**/*.svg",
+    "source/less/**/*.less"
+  ],
+  "engines": {
+    "node": "8.16"
   }
 }
